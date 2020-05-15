@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../img/matrixcomum.gif');
+  background-size: cover;
+  font-family: 'Source Code Pro', monospace;
+  height: 100vh;
+  font-size: 12;
+  }
+
+  @media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+  }
+  
+  /*breakpoint*/
+  @media (min-width: 600px) {
+    body {
+    font-size: 18px;
+  }
+  }
+  
+  header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .menu {
+    background-color: rgb(36, 36, 36);
+    position: fixed;
+    width: 110vw;
+    top: 0;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  .site-title{
+    font-size: 2em;
+    font-family: 'Nova Mono', monospace;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+    font-family: 'Major Mono Display', monospace;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 5px 20px;
+    transition: background-color 0.5s, color 1s;
+  }
+
+  .menu a:hover {
+    background-color: rgb(21, 223, 82);
+    color: rgb(36, 36, 36)
+  }
+
+  .menu a:active {
+    background-color: black;
+    color: rgb(21, 223, 82)
+  }
+
+  a {
+    color: rgb(21, 223, 82);
+    text-decoration: none;
+  }
+
+  .contato,
+  .portifolio {
+    padding: 2em;
+    min-height: 100vh;
+  }
+
+  .contato h2,
+  .portifolio h2 {
+    color: whitesmoke;
+    font-family: 'Major Mono Display', monospace;
+    margin-bottom: 1.5em;
+  }
+
+  .portifolio figure {
+    text-align: center;
+  }
+ 
+  .portifolio .grid{
+    display: grid;
+    gap: 2em;
+  }
+
+  @media (min-width: 560px) {
+    .portifolio .grid {
+      grid-template-columns: 300px 300px;
+    }
+  }
+
+  @media (min-width: 880px) {
+    .portifolio .grid {
+      grid-template-columns: repeat (3, 300px);
+      justify-content: space-evenly;
+      height:75vh
+    }
+  }
+
+  .img-portfolio {
+    height: 175px;
+    width: 275px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 1s;
+  }
+
+  .img-portfolio:hover {
+   transform: scale(1.2);
+   text-shadow: 0px 0px 50px rgba(10, 255, 79, 1);
+  }
+
+  .contato a {
+    color: whitesmoke;
+    font-size: 3em;
+    transition: text-shadow 0.5s;
+  }
+
+  .contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(10, 255, 79, 1);
+
+  }
+
+  .contato a:active {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(10, 255, 79, 1);
+    color: black;
+
+  }
+
+  .contato .icons {
+    text-align: center;
+  }
